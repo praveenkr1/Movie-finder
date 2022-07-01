@@ -1,0 +1,198 @@
+*{
+	overflow-x: hidden;
+	filter: hue-rotate(0deg);
+}
+
+
+
+/* *:hover{
+	border: 5px solid rgb(114, 0, 0);
+}
+
+body:hover{
+	border: none;
+} */
+
+
+body{
+	background-image: url("nature.jpeg");
+	width:100%;
+	background-color: skyblue;
+	margin: 0px;
+	padding:0px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+.header_layout{
+	background-color:blue;
+	height: 140px;
+	width: 100%;
+}
+
+.full_search_box{
+	border: 10px solid darkblue;
+	width: 400px;
+	height: 40px;
+	display: flex;
+	align-content:center; 
+	align-items:center;
+}
+
+.website_data_card{
+	flex: 1;
+	margin-top: 80px;
+	width: 80%;
+	box-shadow: 0px 5px 10px 3px #1F1D36;
+	background-color: blue;
+	border-radius: 10px;
+}
+
+.website_data_card p{
+	padding: 50px;
+	color: #DEDDFF;
+	font-size: 40px;
+	font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;	
+
+}
+
+.card_list{
+	margin-top: 80px;
+}
+
+.movie_data_card{
+	margin-top: 80px;
+	max-width:60vw;
+    word-wrap:break-word;
+	box-shadow: 0px 5px 10px 3px #1F1D36;
+	background-color: blue;
+	transition-duration: 0.8s;
+	border-radius: 10px;
+}
+
+.movie_data_card:hover{
+	background-color: blue;
+	box-shadow: 0px 20px 20px 3px #1F1D36;
+	transition-duration: 0.3s;
+}
+
+.poster{
+	padding: 60px 20px 10px;
+}
+
+.poster img{
+	border:4px solid #1F1D36;
+}
+
+.movie_info{
+	padding:20px;
+}
+.movie_info p{
+	color:#DEDDFF;
+}
+
+.input_search_button:hover{
+	background-color:darkblue;
+}
+
+.page_number{
+	margin-top: 80px;
+	color: #9E9D9F;
+	font-size: 20px;
+	background-color: #000000d0;
+	padding: 20px;
+	color: rgba(255, 255, 255, 0.781);
+	font-weight: 600;
+	border-radius: 10px;
+	font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+.footer{
+	margin-top: 80px;
+	padding: 20px;
+	background-color: blue;
+	height: 20px;
+	width: 100%;
+	color: #DEDDFF;
+}
+
+.c_header_text{
+	align-content: center;
+	display: inline-block;
+	font-size: 40px;
+	font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	color: #DEDDFF;
+}
+
+.movie_data_card{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+@media screen and (min-width: 800px) { /*The following CSS runs only for displays with a width (in pixels) of more than 800px*/
+    .input_search_text{
+		border: none;
+		margin: none;
+		padding: none;
+		outline: none;
+		height:38px;
+		width: 79%;
+		float: left;
+		font-size: 18px;
+		font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	}
+
+	.input_search_button{
+		border: none;
+		margin: none;
+		padding: none;
+		outline: none;
+		background-color:blue ;
+		color: #DEDDFF;
+		transition-duration: 0.8s;
+		height: 40px;
+		width:20.4%;
+		float: right;
+		font-size: 18px;
+		font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+		display: flex;
+		align-content: center;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 800px) { /*The following CSS runs only for displays with a width (in pixels) of less than 800px*/
+    .input_search_text{
+		border: none;
+		margin: none;
+		padding: none;
+		outline: none;
+		height:38px;
+		width: 78%;
+		float: left;
+		font-size: 18px;
+		font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	}
+
+	.input_search_button{
+		border: none;
+		margin: none;
+		padding: none;
+		outline: none;
+		background-color: blue;
+		color: #DEDDFF;
+		transition-duration: 0.8s;
+		height: 40px;
+		width:20%;
+		float: right;
+		font-size: 18px;
+		font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	}
+
+	.poster img{
+		width: 40vw;
+	}
+}
